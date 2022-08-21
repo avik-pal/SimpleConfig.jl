@@ -1,0 +1,16 @@
+global_seed: 12345
+
+optimizer:
+  name: adam
+  learning_rate: 3e-3
+  scheduler:
+    name: cosine
+    min_learning_rate: 1e-4
+
+model:
+  backbone: resnet18
+  stage_size:
+    - 2
+    - 2
+    - 2
+    - 2
